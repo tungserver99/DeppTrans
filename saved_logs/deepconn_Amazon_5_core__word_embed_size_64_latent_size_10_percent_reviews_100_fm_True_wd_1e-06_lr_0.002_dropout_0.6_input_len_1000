@@ -1,0 +1,607 @@
+
+
+Simulation run on: 2023-02-17 16:28:52.568510
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 38.70s | MSE = 1.0838 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 36.95s | MSE = 0.9961 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-17 16:45:28.329001
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 38.54s | MSE = 1.0844 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 37.13s | MSE = 0.9935 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-17 17:00:16.698815
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 39.25s | MSE = 1.0747 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 37.58s | MSE = 0.9339 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-17 17:13:56.475727
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 37.76s | MSE = 1.0696 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 36.77s | MSE = 0.923 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-17 17:21:57.961572
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 36.83s | MSE = 1.049 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 36.72s | MSE = 0.8998 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-17 17:25:51.118918
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 36.67s | MSE = 1.0591 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 36.98s | MSE = 0.9158 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-17 17:29:45.374030
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 38.21s | MSE = 1.0838 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 37.56s | MSE = 0.9793 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-17 17:31:37.819046
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 37.78s | MSE = 1.0878 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 35.50s | MSE = 0.9839 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-17 17:42:23.989223
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 37.70s | MSE = 1.0938 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 35.62s | MSE = 0.9809 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-17 18:23:35.122601
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 36.40s | MSE = 1.0903 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 38.95s | MSE = 0.9918 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-17 18:32:02.558254
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 36.64s | MSE = 1.0806 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 37.75s | MSE = 0.9812 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch final | time: 76.13s | MSE = 0.8867 (TEST)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-18 18:19:38.181537
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 47.12s | MSE = 1.0849 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 37.86s | MSE = 0.9717 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch final | time: 87.99s | MSE = 0.8752 (TEST)
+-----------------------------------------------------------------------------------------
+
+
+Simulation run on: 2023-02-18 19:20:01.215327
+
+
+Data reading complete!
+Number of train batches:   20
+Number of validation batches:    3
+DeepCoNN(
+  (word2vec): Embedding(1359, 64)
+  (user_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (item_conv): TextCNN(
+    (convs): ModuleList(
+      (0): Conv2d(1, 100, kernel_size=(3, 64), stride=(1, 1), padding=(2, 0))
+    )
+    (fc): Linear(in_features=100, out_features=10, bias=True)
+    (dropout): Dropout(p=0.6, inplace=False)
+  )
+  (final): Sequential(
+    (0): Linear(in_features=20, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.6, inplace=False)
+    (3): Linear(in_features=10, out_features=1, bias=True)
+  )
+  (fm): TorchFM(
+    (lin): Linear(in_features=20, out_features=1, bias=True)
+  )
+  (dropout): Dropout(p=0.6, inplace=False)
+  (relu): ReLU()
+)
+
+Model Built!
+Starting Training...
+
+-----------------------------------------------------------------------------------------
+| end of epoch 1 | time: 40.33s | MSE = 1.0839 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch 2 | time: 39.79s | MSE = 0.9581 | dataset = Amazon (VAL)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| end of epoch final | time: 81.99s | MSE = 0.8648 (TEST)
+-----------------------------------------------------------------------------------------
