@@ -48,7 +48,7 @@ def get_common_path(hyper_params):
     return common_path
 
 hyper_params = {
-    'dataset': 'Amazon', # Which dataset to run? 
+    'dataset': 'Yelp', # Which dataset to run? 
     # Pass the same human-friendly dataset name as passed in `prep_all_data.sh`
 
     'k_core': 5, # Data setting?
@@ -56,7 +56,7 @@ hyper_params = {
 
     'weight_decay': float(1e-6), # WD for pytorch models
     'lr': 0.002, # LR for ADAM
-    'epochs': 500, # Epochs to train
+    'epochs': 300, # Epochs to train
     'batch_size': 64, # Batch size
     'shuffle_data_every_epoch': False, # Shuffle train-data every epoch?
 

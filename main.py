@@ -70,7 +70,7 @@ def train(model, criterion, optimizer, reader, hyper_params):
 
     return metrics
 
-def train_complete(hyper_params, Model, train_reader, val_reader, user_count, item_count, model, review = True):
+def train_complete(hyper_params, Model, train_reader, val_reader, test_reader, user_count, item_count, model, review = True):
     import torch
     import torch.nn as nn
     import torch.nn.functional as F
@@ -118,13 +118,23 @@ def train_complete(hyper_params, Model, train_reader, val_reader, user_count, it
             )
             metrics['dataset'] = hyper_params['dataset']
             log_end_epoch(hyper_params, metrics, epoch, time.time() - epoch_start_time, metrics_on = '(VAL)')
-            
+
             # Save best model on validation set
             if metrics['MSE'] < best_MSE:
                 print("Saving model...")
                 torch.save(model.state_dict(), hyper_params['model_path'])
                 best_MSE = metrics['MSE']
             
+            if epoch % 100 == 0:
+                best_model = Model(hyper_params)
+                if is_cuda_available: best_model = best_model.cuda()
+                best_model.load_state_dict(torch.load(hyper_params['model_path']))
+                metrics, user_count_mse_map, item_count_mse_map = evaluate(
+                    best_model, criterion, test_reader, hyper_params, 
+                    user_count, item_count, review = review
+                )
+                log_end_epoch(hyper_params, metrics, 'test', time.time() - epoch_start_time, metrics_on = '(TEST)')
+
     except KeyboardInterrupt: print('Exiting from training early')
 
     # Load best model and return it for evaluation on test-set
@@ -377,13 +387,13 @@ def main_pytorch(hyper_params, gpu_id = None):
     model = Model(hyper_params)
     if is_cuda_available: model = model.cuda()
     #xavier_init(model)
-    model.load_state_dict(torch.load(hyper_params['model_path']))
+    #model.load_state_dict(torch.load(hyper_params['model_path']))
     
     # Train the model
     start_time = time.time()
     model = train_complete(
         hyper_params, Model, train_reader, 
-        val_reader, user_count, item_count, model, review = review_based_model
+        val_reader, test_reader, user_count, item_count, model, review = review_based_model
     )
 
     # Calculating MSE on test-set
